@@ -28,3 +28,7 @@ Submission CSV should resemble the file:
 Sample Submission = 'sample_submission.csv'
 
 Column names, value types should be exactly the same. Also number of rows in the submission csv should be exactly the same as test data. If this is not taken care of, your submission will not be graded.
+
+I have applied different algorithms like linear,lasso,ridge and random forest.
+
+When i compared MSE value of all these algorithms random forest model performed well and achieved 0.54.
