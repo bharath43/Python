@@ -1,7 +1,6 @@
 # Python
-Projects on Python.
 
-Counterfeit Medicines Sales Prediction
+# Counterfeit Medicines Sales Prediction
 
 Counterfeit medicines are fake medicines which are either contaminated or contain wrong or no active ingredient. They could have the right active ingredient but at the wrong dose. Counterfeit drugs are illegal and are harmful to health. 10% of the world's medicine is counterfeit and the problem is even worse in developing countries. Up to 30% of medicines in developing countries are counterfeit.
 
@@ -9,26 +8,42 @@ Millions of pills, bottles and sachets of counterfeit and illegal medicines are 
 
 Despite all these efforts, counterfeit medicine selling rackets don’t seem to stop popping here and there. It has become a challenge to deploy resources to counter these; without spreading them too thin and eventually rendering them ineffective. Government has decided that they should focus on illegal operations of high net worth first instead of trying to control all of them. In order to do that they have collected data which will help them to predict sales figures given an illegal operation's characteristics.
 
-Data Files
+# Objective
+To predict sales figures related to counterfeit medicine selling operations.
 
+# Data Files
 Train Dataset = counterfeit_train.csv
 
 Test Dataset = counterfeit_test.csv
 
-Formal Problem Statement
+# Data Dictionary
+Medicine ID: Medicine ID
 
-Variable names are self explanatory.
+Counterfeit_Weight: Weight of the counterfeit medicine
 
-Your task here is to build a predictive model for predicting sales figures given other information related to counterfeit medicine selling operations. You need to build your model on the train dataset. Test dataset does not have a response column; you need to predict those values and submit it in a csv format.
+DistArea_ID: District ID
 
-Submission:
+Active_Since: Year
 
-Submission CSV should resemble the file:
+Medicine_MRP: Price of the medicine
 
-Sample Submission = 'sample_submission.csv'
+Medicine_Type: Type of the medicine
 
-Column names, value types should be exactly the same. Also number of rows in the submission csv should be exactly the same as test data. If this is not taken care of, your submission will not be graded.
+SidEffect_Level: Sideffect level(critical,mild)
 
-I have applied different algorithms like linear,lasso,ridge and random forest.
+Availability_rating: Availablity of the counterfeit medicine
 
-When i compared MSE value of all these algorithms random forest model performed well and achieved 0.54.
+Area_Type: Different types of areas
+
+Area_City_Type: Tier 1,Tier 2 and Tier 3
+
+Area_dist_level:DIfferent area district levels like small,medium,high and unknown
+
+Counterfeit_Sales: Sale price of countereit medicine
+
+# Conclusion
+I have applied linear,lasso,ridge regression and random forest models.When I compared the performance of the models Random Forest model performed well and achieved mean absolute error of 0.54.
+
+
+
+
